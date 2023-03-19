@@ -1,4 +1,8 @@
 pandas>=1.5
 numpy>=1.24
 seaborn>=0.12
--e .
+matplotlib
+xgboost
+scikit-learn
+catboost
+#-e .
