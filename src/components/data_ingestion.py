@@ -11,7 +11,7 @@ from dataclasses import dataclass
 class dataingestionconfig:
     train_data_path=os.path.join('artifacts','train.csv')
     test_data_path=os.path.join('artifacts','test.csv')
-    raw_data_path= os.path.join('artifact','data.csv')
+    raw_data_path= os.path.join('artifacts','data.csv')
 
 
 
@@ -49,10 +49,9 @@ class DataIngestion:
         except Exception as e:
             raise CustomException(e,sys)
 
-
-'''if __name__=="__main__":
+if __name__=="__main__":
 
     obj= DataIngestion()
-    obj.initiate_data_ingestion()'''
+    obj.initiate_data_ingestion()
 
 
