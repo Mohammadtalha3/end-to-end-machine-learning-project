@@ -79,8 +79,7 @@ class Datatransformation:
         try:
             train_df= pd.read_csv(train_path)
             test_df= pd.read_csv(test_path)
-            train_df.head(2)
-            test_df.head(2)
+            
 
             logging.info('Read train and test data completed')
             logging.info('Obtaining preprocessing objects')

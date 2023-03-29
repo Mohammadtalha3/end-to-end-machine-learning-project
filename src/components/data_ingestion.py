@@ -5,6 +5,7 @@ from src.logger import logging
 import pandas as pd
 from src.components.data_transformation import Datatransformation
 from src.components.data_transformation import DataTransformationconfig
+from src.components.model_trainer import modeltrainerconfig,modelTrainer
 
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
@@ -60,8 +61,8 @@ if __name__=="__main__":
     data_transformation=Datatransformation()
     train_arr,test_arr,_=data_transformation.initiate_data_transformation(train_data,test_data)
 
-    #modeltrainer=ModelTrainer()
-    #print(modeltrainer.initiate_model_trainer(train_arr,test_arr))
+    modeltrainer= modelTrainer()
+    print(modeltrainer.initiate_modeltrainer(train_arr,test_arr))
 
 
 
