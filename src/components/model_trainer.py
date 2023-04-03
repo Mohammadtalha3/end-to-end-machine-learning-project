@@ -114,6 +114,5 @@ class modelTrainer:
             r2_square=r2_score(y_test,predicts)
             return r2_square
         except Exception as e:
-         
-         raise CustomException(e,sys)
+            raise CustomException(e,sys)
             
