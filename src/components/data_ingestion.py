@@ -28,7 +28,7 @@ class DataIngestion:
         logging.info("Entered the data ingestion method or component")
 
         try:
-            df=pd.read_csv("D:\\end to en machine learning\\Notebook\\Data\\StudentsPerformance.csv")#Reading Dataset
+            df=pd.read_csv("D:\\end to end machine learning\\Notebook\\Data\\StudentsPerformance.csv")#Reading Dataset
             logging.info('Reading the dataset as DataFrame')
 
             os.makedirs(os.path.dirname(self.Ingestion_config.train_data_path),exist_ok=True)#making directory for train data path
